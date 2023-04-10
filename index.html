@@ -19,134 +19,155 @@
     la célèbre raclette savoyarde traditionnelle ou à l’ancienne, une expérience gastromique et une cuisine sans artifice"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/style.css" />
   </head>
 
   <body>
 
+    
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button
-            class="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#navbar-default"
-            aria-expanded="false"
-          >
-          <i class="bi bi-list"></i>
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-          </svg>
-            
-          </button>
-
           <a class="navbar-brand" href="./Assets/images/logo.png">
             <img
-              src="https://savoyard.fr/images/logo.png"
+              src="./Assets/images/logo.png"
               alt="Le Quai Antique à Chambéry"
             />
-            <span class="site-name pull-left"
-              >Le Quai antique</span
-            >
+            <span class="site-name pull-left">Le Quai antique</span>
           </a>
         </div>
-        <div
-          class="navbar-collapse collapse"
-          id="navbar-default"
-          aria-expanded="false"
-        >
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="./index.html">Accueil</a></li>
-            <li>
-              <a
-                href="https://worldpeople.fr/mobilemenu/menu-1.html"
-                target="_blank"
-                >La Carte</a
-              >
-            </li>
-            <li><a href="https://savoyard.fr/galerie/">Galerie</a></li>
-            <li><a href="https://savoyard.fr/acces/">Accès</a></li>
-          </ul>
-        </div>
+        <a id="link" href="#"><span id="burger"></span></a>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./carte.html">La Carte</a></li>
+          <li><a href="./galerie.html">Galerie</a></li>
+          <li><a href="./acces.html">Accès</a></li>
+        </ul>
       </div>
     </nav>
 
+  <div class="container-fluid fill">
+    <div class="sign">
+      <div class="img-sign">
+        <h1 class="text-center">
+          Restaurant Cuisine Traditionnelle Spécialités Savoyardes
+        </h1>
+    </div>
+  </div>
+</div>
 
- <div class="container-fluid fill">
-        <div id="myCarousel" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="active item">
-              <div
-                class="fill"
-                
-              >
-                <div class="container">
-                  <a
-                    class="cursor-pointer img-big-push-carousel"
-                    
+<div id="home" class="template-row">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-center">
+          Fondues, Pierrades, Raclettes, Grillades
+        </h2>
+        
+        <div class="separateur"></div>
+        
+        <div class="row">
+          <div class="col-md-12">
+            <div
+                    id="carouselExampleInterval"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
                   >
-                    <h1 class="text-center">
-                      Restaurant Cuisine Traditionnelle Spécialités Savoyardes
-                    </h1>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="home" class="template-row">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h2 class="text-center">
-                Fondues, Pierrades, Raclettes, Grillades
-              </h2>
-
-              <div class="separateur"></div>
-
-              <div class="row">
-                <div class="col-md-12">
-                  <img
-                    src="https://savoyard.fr/images/home-image.png"
-                    class="pull-right img-responsive"
-                    alt="Terrasse du Quai antique - Fondues, Pierrades, Raclettes, Grillades"
-                    
-                  />
-
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="5000">
+                        <img
+                          src="./Assets/images/images.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img
+                          src="./Assets/images/images1.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img
+                          src="./Assets/images/images2.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img
+                          src="./Assets/images/images3.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExampleInterval"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExampleInterval"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            
+                  <div class="separateur"></div>
                   <p class="text-justify">
-                    Vous aimez la neige, le ski, les sapins, les ambiances cosys
-                    et chaleureuse ?&nbsp;Vous pensez montagne l’été
-                    !&nbsp;Rendez-vous dans notre<strong>
-                      restaurant Le Savoyard à Rambouillet, </strong
-                    >ville présidentielle située dans les Yvelines.
+                    Situé au cœur de la ville historique de Chambéry, le
+                    restaurant <strong> Le Quai Antique </strong>est un joyau
+                    culinaire caché dans les rues pavées de la vieille ville.
+                    Avec son ambiance chaleureuse et son décor antique, c'est
+                    l'endroit idéal pour passer une soirée inoubliable.
                   </p>
 
                   <p class="text-justify">
-                    Pour un peu on voudrait que l’hiver soit rigoureux et
-                    enneigé afin de se croire tout à fait en Savoie !
+                    <strong>Le Quai Antique</strong> offre une expérience
+                    gastronomique unique en son genre. La cuisine est basée sur
+                    des ingrédients locaux et frais, avec une attention
+                    particulière portée aux produits de saison. Les plats sont
+                    préparés avec une touche créative et originale, mélangeant
+                    des saveurs traditionnelles et modernes pour des résultats
+                    époustouflants.
                   </p>
 
                   <p class="text-justify">
-                    <strong
-                      >Notre cuisine est à la fois traditionnelle et Savoyarde
-                      avec ses spécialités typiques</strong
-                    >: Diots et Crozets, fondues, pierrades, raclettes,
-                    tartiflettes …
+                    Notre cuisine est à la fois
+                    <strong>traditionnelle et Savoyarde</strong> avec ses
+                    <strong>spécialités typiques</strong>: Diots et Crozets,
+                    fondues, pierrades, raclettes, tartiflettes …
                   </p>
 
                   <p class="text-justify">
-                    Passionnés par la Savoie, nous vous accueillons dans notre
-                    chalet dans une
-                    <strong>atmosphère conviviale et chaleureuse. </strong>Le
-                    décor est issu d’un véritable chalet d’alpage: mobilier,
-                    luge, patins et paire de skis en bois, hottes aspirantes …
+                    L'ambiance du restaurant est chaleureuse et intime, avec une
+                    décoration antique inspirée de l'histoire de la ville. Les
+                    murs en pierre et les poutres en bois créent une atmosphère
+                    cosy et élégante. Le service est exceptionnel, avec une
+                    équipe professionnelle et attentionnée pour répondre à tous
+                    vos besoins.
                   </p>
 
                   <p class="text-justify">
@@ -165,141 +186,97 @@
                     <strong>nombreuses spécialités de la Savoie: </strong>Diots
                     et Crozets savoyards, Raclette traditionnelle ou à
                     l’ancienne, Pierrade aux 3 viandes, Tartiflette
-                    traditionnelle, Pierrade aux 3 viandes, fondue au Chocolat
-                    Noir …
+                    traditionnelle, fondue au Chocolat Noir …
                   </p>
 
                   <p class="text-justify">
-                    Vous pourrez accompagner vos plats d’un délicieux
-                    <strong>vin de Savoie</strong> sélectionné avec soin lors de
-                    nos déplacements en Savoie.
+                    <strong>Le Quai Antique </strong>est également connu pour sa
+                    carte des vins, qui propose une sélection de vins locaux et
+                    internationaux soigneusement sélectionnés pour accompagner
+                    chaque plat. Les connaisseurs apprécieront la variété et la
+                    qualité des vins proposés, ainsi que les conseils avisés du
+                    sommelier.
                   </p>
 
                   <p class="text-justify">
-                    Vous avez peu de temps pour déjeuner ! Choisissez
-                    <strong>notre formule à 14 euros</strong> ou le
-                    <strong>plat du jour à 9,50 euros</strong>.
-                  </p>
-
-                  <p class="text-justify">
-                    Nous vous proposons également
+                    <strong>Le Quai Antique </strong> est un restaurant
+                    incontournable à Chambéry pour une expérience gastronomique
+                    exceptionnelle. Avec sa cuisine inventive, son ambiance
+                    chaleureuse et son service irréprochable, c'est l'endroit
+                    idéal pour célébrer une occasion spéciale ou simplement
+                    passer une soirée agréable entre amis ou en famille. Nous
+                    vous proposons également
                     <strong>des plats typiquement savoyards à emporter</strong>,
-                    un <strong>service Traiteur à domicile </strong>à l’occasion
-                    d’un mariage, d’un anniversaire, d’un évènement à fêter
-                    entre amis.
+                    un <strong>service Traiteur à domicile </strong><br />
+                    Alors n'hésitez plus
+                    <strong>Réservez votre table dès maintenant </strong>pour
+                    découvrir le meilleur de la cuisine savoyarde contemporaine
+                    et internationale.
                   </p>
                 </div>
               </div>
-              <br />
+             
               
               <div class="row">
                 <div class="col-md-12">
                   <div id="blocks" class="clearfix">
-                    <div class="col-md-4">
-                      <div class="item-block">
-                        <h4 class="text-center">Découvrez le Quai Antique</h4>
-                        <div class="text-center">
-                          <div
-                            class="dailymotion_player"
-                            videoid="xba4jm"
-                            width="95%"
-                            height="240"
-                            showinfo="0"
-                            autoplay="0"
-                            
-                          >
-                            <iframe
-                              title="Dailymotion iframe"
-                              src="//www.dailymotion.com/embed/video/xba4jm?info=0&amp;autoPlay=0"
-                              width="95%"
-                              height="240"
-                              webkitallowfullscreen=""
-                              mozallowfullscreen=""
-                              allowfullscreen=""
-                            ></iframe>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="item-block">
-                        <h4 class="text-center">Aller au Quai Antique</h4>
-                        <div class="text-center">
-                          <img
-                            src="https://savoyard.fr/images/plan-acces.png"
-                            
-                          />
-                        </div>
-                      </div>
-                      <div id="facebook" >
-                        <a
-                          href="https://www.facebook.com/LeSavoyardRambouillet/"
-                          target="_blank"
-                          ><img
-                            src="https://savoyard.fr/images/facebook.png"
-                            alt="Facebook"
-                            height="40"
-                          />
-                          Rejoignez Nous sur Facebook !</a
-                        >
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div
-                        id="reservation"
-                        class="item-block"
-                        
-                      >
-                        <h4 class="text-center" >
-                          Réservez une Table
-                        </h4>
-                        <p
-                          class="h3 text-right"
-                          
-                        >
-                          Appelez le<br /><strong
-                            ><span>04 79 60 20 00</span
-                            ></strong
-                          >
-                        </p>
-                      </div>
-                      <div
-                        id="groupe"
-                        class="item-block"
                     
+                      
+                    <div class="col-md-4">
+                      <div
+                      id="reservation"
+                      class="item-block"
+                      
                       >
-                        <h4 class="text-center">
-                          Venez en Groupe
-                        </h4>
-                        <p
-                          class="text-right"
-                          
+                      <h4 class="text-center" >
+                        Réservez une Table
+                      </h4>
+                      <p
+                      class="h3 text-right"
+                      
+                      >
+                      Appelez le<br /><strong
+                      ><span>04 79 60 20 00</span
+                        ></strong
                         >
-                          Formule spéciale pour les groupes de 10 à 25 personnes
-                          <a
-                            href="https://savoyard.fr/groupes/"
-                            class="btn btn-success btn-xs"
-                            >Cliquez ici</a
-                          >
                         </p>
                       </div>
-                      <div id="plats" class="item-block">
+                      <div
+                      id="groupe"
+                      class="item-block"
+                      
+                      >
+                      <h4 class="text-center">
+                        Venez en Groupe
+                      </h4>
+                      <p
+                      class="text-right"
+                      
+                      >
+                      Formule spéciale pour les groupes de 10 à 25 personnes
+                      <a
+                      href="https://savoyard.fr/groupes/"
+                      class="btn btn-success btn-xs"
+                      >Cliquez ici</a
+                      >
+                    </p>
+                  </div>
+                  <div id="plats" class="item-block">
                         <h4 class="text-center" >
                           Plats à Emporter
                         </h4>
                         <p
-                          class="text-right"
-                         
+                        class="text-right"
+                        
                         >
-                          Votre raclette traditionnelle, tartiflette, fondue
-                          savoyarde à emporter
-                          <a
-                            href="https://savoyard.fr/plats-a-emporter-rambouillet/"
-                            class="btn btn-success btn-xs"
-                            >Cliquez ici</a
-                          >
-                        </p>
-                      </div>
+                        Votre raclette traditionnelle, tartiflette, fondue
+                        savoyarde à emporter
+                        <a
+                        href="https://savoyard.fr/plats-a-emporter-rambouillet/"
+                        class="btn btn-success btn-xs"
+                        >Cliquez ici</a
+                        >
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -308,7 +285,10 @@
           </div>
         </div>
       </div>
-
+    </div>
+    
+    
+    
       <div id="footer" class="text-center">
         <div class="container">
           <div class="row">
@@ -327,34 +307,30 @@
                 <p class="text-right">
                   Propulsé par 
                   <a href="https://www.retz-o-lution-informatique.fr/" target="_blank"
-                    ><strong>Retz-o-lution-informatique</strong></a
+                  ><strong>Retz-o-lution-informatique</strong></a
                   >
-                  à Frossay<br /><a
-                    href="./Assets/mentions-légales/mentions.html"
-                    >Mentions légales</a
+                  <br /><a
+                  href="./Assets/mentions-légales/mentions.html"
+                  >Mentions légales</a
                   >
                   |
                   <a href="https://savoyard.fr/cookies/"
-                    >A propos des Cookies</a
+                  >A propos des Cookies</a
                   >
                   
                   
+                  
+                  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./Assets/js/script.js"></script>
       
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-      crossorigin="anonymous"
-    ></script>
-
-
-
-  </body>
-
+      
+      
+    </body>
+    
 </html>

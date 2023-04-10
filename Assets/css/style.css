@@ -5,13 +5,14 @@
 }
 
 html,body {
-    height:100vh;
+	margin: 0;
+	padding: 0;
+    height:100%;
 }
 
 body { 
     background-image:url('../images/background.jpg');
-    padding-left: 0;
-	padding-right: 0;
+    
 
 }
 
@@ -25,9 +26,13 @@ body {
 	
 } 
 
+.container>.navbar-header {
+    margin-right: -25px;
+    margin-left: -35px;
+}
+
 .navbar-fixed-bottom, .navbar-fixed-top {
-	
-    position: fixed;
+	position: fixed;
     right: 0;
     left: 0;
     z-index: 1000;
@@ -40,85 +45,154 @@ body {
 	box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
 }
 
-.navbar-brand>img {
-	max-height: 60px;
+.navbar-brand > img {
+	max-height: 100px;
 	position: absolute;
 	float: left;
-}
-
-
-
-.navbar-toggle {
-	float: right;
-	background-color: #2c180d;
-	border: 1px solid transparent;
-	border-radius: 5px;
-	
-}
-
-
-.bi-list {
-	color: #FFF;
+	z-index: 1000;
 }
 
 .site-name {
 	color:#fff;
-	margin-left:60px;
-	
-}
-	
-
-
-
-/********** Carousel **********/
-
-.carousel,.item,.active {
-    height:100%;
+	margin-left:100px;
+	font-size: 2rem;
 }
 
-.carousel-inner {
+/********** Menu Hamburger **********/
+
+li > a {
+	color:white;
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+
+li > a:hover {
+	background-color: #311D14;
+	color: #FFF;
+	padding: 10px 30px;
+	border-radius: 20px;
+}
+
+
+#burger {
+  top : -25px;
+  right: -15px;
+  width:30px;
+  height:3px;
+  background:white;
+  position:relative;
+  float: right;
+
+}
+
+#burger::before,
+#burger::after {
+  content:'';
+  width:30px;
+  height:3px;
+  background:white;
+  display:inline-block;
+  position:absolute;
+  transform-origin: center;
+  transition: all 0.3s ease;
+}
+
+#burger::before {
+  top:-7px;
+}
+
+#burger::after {
+  top:7px;
+}
+
+#burger.open {
+  background:transparent;
+}
+
+#burger.open::before {
+  transform: rotate(45deg);
+  top:0;
+}
+
+#burger.open::after {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+ header {
+  position:relative;
+  max-width:500px;
+} 
+
+ul {
+  background-image: url('../images/bg-header.jpg');
+  position:absolute;
+  width:100%;
+  left:0;
+  top:100%;
+  padding:10px 0;
+  transform:scaleY(0);
+  transform-origin:center top;
+  transition:all 0.3s ease;
+}
+
+ul.open {
+  transform:scaleY(1);
+}
+
+ul li {
+  padding:5px 0;
+  text-align:center
+}	
+
+
+
+/********** Sign **********/
+
+.sign {
     height:100%;
 }
 
 .fill {
     width:100%;
     height:100%;
-    background-image: url(../images/fond_slider.jpg);
+	height: 600px;
+    background-image: url(../images/savoyard-restaurant.png);
     background-position:center;
     background-size:cover;
     padding-left:0;
-    padding-right:0; 
+    padding-right:0;
+}
+
+
+/********** Carousel **********/
+
+img.d-block {
+	object-fit: contain;
+
 }
 
 
 
 /***** Cadre central Titre *****/
 
-.img-big-push-carousel {
-    background-color: rgba(62, 35, 24, .65);
+.img-sign {
+    background-color: rgba(39, 16, 7, 0.4);
+	border-radius: 20px;
 	padding: 35px;
     text-decoration: none;
 	position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
    	-webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
-.img-big-push-carousel h1 {
+.img-sign h1 {
 	font-size: 1.8rem;
 	color:#FFFFFF;
 	margin:0;
-}
-.img-big-push-carousel:hover {
-	text-decoration:none;
-}
-
-img.pull-right.img-responsive {
-	margin-bottom: 20px;
-    margin-left: auto;
-	margin-right: auto;
 }
 
 /********** Contenu central **********/
@@ -137,25 +211,76 @@ img.pull-right.img-responsive {
 	
 p.text-justify {
     text-align: justify;
+	font-size: 1.4rem;
+}
+
+/********** CTA Réservation **********/
+
+#blocks {
+    border-radius: 4px;
+    background-image: url(../images/bg-header.jpg);
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+
+#blocks .item-block {
+    background-image: url(../images/bg-blocks.png);
+    padding: 10px;
+    position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#plats.item-block:before {
+    content: ' ';
+    background-image: url(../images/ic-plats.png);
+    width: 42px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+
+
+#groupe.item-block:before {
+    content: ' ';
+    background-image: url(../images/ic-people.png);
+    width: 39px;
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+
+#reservation.item-block:before {
+    content: ' ';
+    background-image: url(../images/ic-phone.png);
+    width: 46px;
+    height: 34px;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
 }
 
 
 /********** Pied de page **********/
 
 #footer {
-    padding: 35px 0 15px 0;
     color: #FFF;
-    background-image: url(../images/bg-footer.jpg);
-    //background-repeat: repeat-x;
-		
+	background-image: url(../images/bg-footer.jpg);
 }
 
 #footer a { 
     color:#FFFFFF; 
+	text-decoration: none;
 }
 
 #footer p {
-	margin-bottom:0;
+	font-size: 1.3rem;
+	margin-bottom: 0;
 }
 #footer #block-right {
 	margin: 20px 0;
