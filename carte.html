@@ -1,71 +1,292 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
-      rel="stylesheet"
-    />
-    <title>Le Quai Antique</title>
-    <meta
-      name="description"
-      content="Le restaurant Le Quai Antique à
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet" />
+  <title>Le Quai Antique</title>
+  <meta name="description"
+    content="Le restaurant Le Quai Antique à
     Chambéry vous propose ses spécialités de la Savoie, les Diots, les Crozets, la Tartiflette, 
-    la célèbre raclette savoyarde traditionnelle ou à l’ancienne, une expérience gastromique et une cuisine sans artifice"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./Assets/css/style.css" />
-  </head>
+    la célèbre raclette savoyarde traditionnelle ou à l’ancienne, une expérience gastromique et une cuisine sans artifice" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./Assets/css/style.css" />
+</head>
 
-  <body>
+<body>
 
-    
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="./Assets/images/logo.png">
-            <img
-              src="./Assets/images/logo.png"
-              alt="Le Quai Antique à Chambéry"
-            />
-            <span class="site-name pull-left">Le Quai antique</span>
-          </a>
-        </div>
-        <a id="link" href="#"><span id="burger"></span></a>
 
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="./index.html">Accueil</a></li>
-          <li><a href="./carte.html">La Carte</a></li>
-          <li><a href="./galerie.html">Galerie</a></li>
-          <li><a href="./acces.html">Accès</a></li>
-        </ul>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./Assets/images/logo.png">
+          <img src="./Assets/images/logo.png" alt="Le Quai Antique à Chambéry" />
+          <span class="site-name pull-left">Le Quai antique</span>
+        </a>
       </div>
-    </nav>
+      <a id="link" href="#"><span id="burger"></span></a>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./carte.html">La Carte</a></li>
+        <li><a href="./galerie.html">Galerie</a></li>
+        <li><a href="./acces.html">Accès</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section class="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="gallery-filter">
+          <button class="filter-button active" data-filter="all">Tout</button>
+          <button class="filter-button" data-filter="platEmporter">Nos Plats à Emporter</button>
+          <button class="filter-button" data-filter="entree">Entrée</button>
+          <button class="filter-button" data-filter="plats">Plats</button>
+          <button class="filter-button" data-filter="specialites">Spécialités</button>
+          <button class="filter-button" data-filter="desserts">Desserts</button>
+          <button class="filter-button" data-filter="boissons">Boissons</button>
+        </div>
+      </div>
+
+      <div class="row">
+        
+        <div class="gallery-item platEmporter">
+          <div class="gallery-item-category">
+            <img src="./Galerie/images/Raclette-traditionnelle.png">
+          </div>
+        </div>
+        <div class="gallery-item platEmporter">
+          <div class="gallery-item-category">
+            <img src="./Galerie/images/pierrade-2pers.png">
+          </div>
+        </div>
+        <div class="gallery-item platEmporter">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/Tartiflette-Traditionnelle.png">
+          </div>
+        </div>
+        <div class="gallery-item platEmporter">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/Planche de charcuterie et fromage.png">
+          </div>
+        </div>
+        <div class="gallery-item platEmporter">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/Burger Au Reblochon.png">
+          </div>
+        </div>
+        <div class="gallery-item platEmporter">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/burger savoyard.png">
+          </div>
+        </div>
+        
+
+        <div class="gallery-item entree">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/salade-savoyarde.png">
+          </div>
+        </div>
+        <div class="gallery-item entree">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/salade-tremplin.png">
+          </div>
+        </div>
+        <div class="gallery-item entree">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/salade-nicoise.png">
+          </div>
+        </div>
+        <div class="gallery-item entree">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/salade_paysanne.png">
+          </div>
+        </div>
+        <div class="gallery-item entree">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/salade de chèvre.png">
+          </div>
+        </div>
+        <div class="gallery-item entree">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/Salade de saumon à la Tomme de Savoie.png">
+          </div>
+        </div>
+                
+        
+        <div class="gallery-item plats">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/pave-de-boeuf-grille.png">
+          </div>
+        </div>
+        <div class="gallery-item plats">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/andouillettes-au-four.png">
+          </div>
+        </div>
+        <div class="gallery-item plats">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/entrecote-grillee.png">
+          </div>
+        </div>
+        <div class="gallery-item plats">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/magret-de-canard.png">
+          </div>
+        </div>
+        <div class="gallery-item plats">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/escalope-sauce-normande.png">
+          </div>
+        </div>
+        <div class="gallery-item plats">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/brochette-st-jacques.png">
+          </div>
+        </div>
+        
+        <div class="gallery-item specialites">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/Tartiflette.png">
+          </div>
+        </div>
+        <div class="gallery-item specialites">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/reblochonade.png">
+          </div>
+        </div>
+        <div class="gallery-item specialites">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/fondue.jpg">
+          </div>
+        </div>
+        <div class="gallery-item specialites">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/raclette-2pers.png">
+          </div>
+        </div>
+        <div class="gallery-item specialites">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/fondue-bourguignonne1.png">
+          </div>
+        </div>
+        <div class="gallery-item specialites">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/pierrade-2pers.png">
+          </div>
+        </div>
+        
+        <div class="gallery-item desserts">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/gateau-mont-blanc.png">
+          </div>
+        </div>
+        <div class="gallery-item desserts">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/tarte-fine-pommes-vergeoise.png">
+          </div>
+        </div>
+        <div class="gallery-item desserts">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/creme-brulee.png">
+          </div>
+        </div>
+        <div class="gallery-item desserts">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/ile-flottante-vanille.png">
+          </div>
+        </div>
+        <div class="gallery-item desserts">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/moelleux-au-chocolat.png">
+          </div>
+        </div>
+        <div class="gallery-item desserts">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/fondue-au-chocolat.png">
+          </div>
+        </div>
+        
+        <div class="gallery-item boissons">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/blanche-du-mont-blanc.png">
+          </div>
+        </div>
+        <div class="gallery-item boissons">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/blonde-du-mont-blanc.png">
+          </div>
+        </div>
+        <div class="gallery-item boissons">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/genepi.png">
+          </div>
+        </div>
+        <div class="gallery-item boissons">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/mont-genep.png">
+          </div>
+        </div>
+        <div class="gallery-item boissons">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/roussette-de-savoie-cuvee-excellence.png">
+          </div>
+        </div>
+        <div class="gallery-item boissons">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/savoie-rose.png">
+          </div>
+        </div>
+        <div class="gallery-item boissons">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/aperitifs.png">
+          </div>
+        </div>
+        <div class="gallery-item boissons">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/marc-de-savoie.png">
+          </div>
+        </div>
+
+        <div class="gallery-item boissons">
+          <div class="gallery-item-category">
+            <img src="/Galerie/images/jus-de-fruits-bio.png">
+          </div>
+        </div>
+       
+  
+        
+        
+        
+        
+      </div>
+    </div>
+  </section>
+
+
+
+ 
 
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./Assets/js/script.js"></script>
-      
-      
-      
-    </body>
-    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <script src="./Assets/js/script.js"></script>
+
+
+
+
+</body>
+
 </html>
