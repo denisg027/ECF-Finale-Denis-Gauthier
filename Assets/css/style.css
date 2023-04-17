@@ -55,15 +55,17 @@ body {
 
 .navbar-brand > img {
     max-height: 100px;
+    height: 80px;
     position: relative;
+    margin-left: 30px;
     float: left;
     z-index: 1000;
 }
 
 .site-name {
     color: #fff;
-    margin-left: 100px;
-    font-size: 2rem;
+    margin-left: 20px;
+    font-size: 1.8rem;
 }
 
 /********** Menu Hamburger **********/
@@ -83,8 +85,7 @@ li > a:hover {
 
 
 #burger {
-    top: -75px;
-    right: -75px;
+    top: -60px;
     width: 30px;
     height: 3px;
     background: white;
@@ -331,7 +332,7 @@ p.text-justify {
 section h1 {
     margin-top: 100px;
     margin-bottom: 20px;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     font-weight: 600;
     text-align: center;
 
@@ -415,7 +416,7 @@ h4 {
 
 h5 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
