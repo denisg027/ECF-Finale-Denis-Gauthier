@@ -20,6 +20,11 @@ body {
 
 }
 
+#main {
+    position:relative;
+    padding-bottom: 30px;   
+ }
+
 /********** Barre de navigation **********/
 
 .navbar>.container {
@@ -158,6 +163,9 @@ ul li {
 #footer {
     color: #FFF;
     background-image: url(../images/bg-footer.jpg);
+    position: absolute;
+    width: 100%;
+    
 }
 
 #footer a {
@@ -252,9 +260,6 @@ img.d-block {
     cursor: pointer;
 }
 
-.row-accueil img:hover {
-    
-}
 
 .template-row {
     font-size: 18px;
@@ -329,7 +334,7 @@ p.text-justify {
 /******************** Page Carte Menu ********************/
 
 
-section h1 {
+main h1 {
     margin-top: 100px;
     margin-bottom: 20px;
     font-size: 1.8rem;
@@ -347,6 +352,7 @@ a.btn {
     font-weight: bold ;
     color: #291408;
     padding: 20px auto;
+    width: 400px;
     display: block;
     margin: auto;
 }
@@ -373,7 +379,7 @@ a.btn.collapsed::after {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-top: 20px;
 }
@@ -386,7 +392,7 @@ h3.menu-price {
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
  
 .menu-item {
@@ -414,6 +420,19 @@ h4 {
     margin-top: 30px;
 }
 
+h4 > a {
+    font-family: 'Jim Nightshade', cursive;
+    color: #291408;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+h4 > a:hover {
+    color: #291408;
+    font-size: 1.5rem;
+}
+
 h5 {
     text-align: center;
     font-size: 1.2rem;
@@ -424,6 +443,26 @@ h5 {
     margin-top: 10px;
 }
 
+.card-body {
+    width: 400px;
+    padding: 10px 20px 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.images {
+    display: flex;
+    max-width: 100%;
+    width: 400px;
+}
+
+
+img.imagesBV {
+    display: flex;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
