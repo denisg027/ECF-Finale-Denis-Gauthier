@@ -1,0 +1,436 @@
+/********** Général **********/
+* {
+    box-sizing: border-box;
+    font-family: 'Jim Nightshade', cursive;
+    /* 2ème police d'écriture :  font-family: 'Montserrat', sans-serif; */
+
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-image: url('../Assets/images/background.jpg');
+    height: 100%;
+
+}
+
+.container h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+        
+}
+
+button.btn.btn-warning {
+    background-color: #C09054;
+}
+
+a.btn.btn-primary {
+    background-color: #C09054;
+    margin: 5px;
+}
+
+a.btn.btn-secondary {
+    background-color: #683F1C;
+}
+
+a.btn.btn-danger {
+    background-color: #291408;
+}
+
+a.btn.btn-info {
+    background-color: #D1B075;
+    color: #FFF;
+    
+}
+
+/********** Barre de navigation **********/
+
+.navbar>.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+}
+
+.container>.navbar-header {
+    margin-right: -25px;
+    margin-left: -35px;
+}
+
+.navbar-fixed-bottom,
+.navbar-fixed-top {
+    display: block;
+    top: 0;
+    height: 70px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-default {
+    background-color: transparent;
+    background-image: url('../Assets/images/bg-header.jpg');
+    border-color: transparent;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+}
+
+.navbar-brand>img {
+    max-height: 100px;
+    height: 50px;
+    position: relative;
+    margin-left: 20px;
+    float: left;
+    z-index: 1000;
+    margin-top: 0;
+}
+
+
+
+/********** Menu Hamburger **********/
+
+li > a, a#navbarDropdown, li {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Jim Nightshade', cursive;
+}
+
+li>a.btn {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Jim Nightshade', cursive;
+}
+
+ul.collapse li>a,
+ul.collapse li>a:hover {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Jim Nightshade', cursive;
+}
+
+
+li>a:hover, #text:hover, a#navbarDropdown:hover,
+li>a.btn:hover, a.dropdown-item:hover {
+    background-color: #C09054;
+    color: #FFF;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #C09054;
+    color: #FFF;
+}
+
+input:focus, .form-select:focus, .form-control:focus {
+    border-color: #291408;
+    box-shadow:0 0 0 .25rem rgba(104, 63, 28,.50)
+ }
+
+ .form-select:checked {
+    background-color: #C09054;
+ }
+
+#burger {
+    top: -30px;
+    width: 30px;
+    height: 3px;
+    background: white;
+    position: relative;
+    float: right;
+
+}
+
+#burger::before,
+#burger::after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    background: white;
+    position: absolute;
+    transform-origin: center;
+    transition: all 0.3s ease;
+}
+
+#burger::before {
+    top: -7px;
+}
+
+#burger::after {
+    top: 7px;
+}
+
+#burger.open {
+    background: transparent;
+}
+
+#burger.open::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+#burger.open::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+header {
+    position: relative;
+    max-width: 500px;
+}
+
+ul.nav {
+    background-image: url('../Assets/images/bg-header.jpg');
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    padding: 10px 0;
+    transform: scaleY(0);
+    transform-origin: center top;
+    transition: all 0.3s ease;
+}
+
+ul.nav.open {
+    transform: scaleY(1);
+}
+
+ul.nav li {
+    padding: 5px 0;
+    text-align: center
+}
+
+
+.site-name {
+    color: #FFF;
+    font-size: 2rem;
+    padding-left: 20px;
+    position: relative;
+    top: 5px;
+}
+
+
+/********** Page Administration **********/
+
+.space {
+    margin-top: 120px;
+    
+}
+
+.space-list {
+    margin-top: 100px;
+    
+}
+
+.admin {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.help-inline {
+    color: red;
+}
+
+.dropdown::after {
+    position: absolute;
+    top: 55%;
+    right: 5px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #023F55;
+    content: "";
+    pointer-events: none;
+}
+
+.dropdown select {
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+/***** Modification Carte & Menus *****/
+
+.admin h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.row h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+/***** Ajout Carte & Menus *****/
+
+.btn-success {
+    background-color: #683F1C;
+    margin-left: 20px;
+}
+
+.btn-primary {
+    margin-left: 20px;
+}
+
+
+
+th {
+    font-family: 'Jim Nightshade', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#category {
+    padding: 6px 36px 6px 12px;
+}
+
+input, select {
+    margin-bottom: 10px;
+}
+
+
+/***** Suppression Carte & Menus *****/
+
+p.alert {
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #D1B075;
+}
+
+
+
+/********** Pied de page **********/
+
+#footer {
+    color: #FFF;
+    background-image: url(../Assets/images/bg-footer.jpg);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+#footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#footer p {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+#footer #block-right {
+    margin: 20px 0;
+    padding-right: 20px;
+    border-right: 3px solid white;
+
+}
+
+#footer #block-left {
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 3px solid white;
+
+}
+
+p.text-left {
+    text-align: left;
+}
+
+p.text-right {
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/********** Media Queries **********/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media (min-width: 768px) {
+	.navbar-default {
+		background-color: transparent;
+		background-image: url('../Assets/images/bg-header.jpg');
+		background-repeat: repeat-x;
+		border-color: transparent;
+		box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+	}
+	.navbar-nav>li>a {
+	    background: url('../Assets/images/bg-item.png') 0 0;
+	    width: 100px;
+	    height: 45px;
+	    margin-right: 7px;
+	    text-align: center;
+	}
+	.navbar-brand>img {
+		position:absolute;
+	}
+	.navbar-default .navbar-nav>li>a:hover,
+	.navbar-default .navbar-nav>li>a:focus,
+	.navbar-default .navbar-nav>.active>a,
+	.navbar-default .navbar-nav>.active>a:focus,
+	.navbar-default .navbar-nav>.active>a:hover {
+		color:#FFFFFF;
+		background-color: transparent;
+		border-color: transparent;
+	    background: url('../Assets/images/bg-item.png') 0 -45px;
+	}
+}
+.navbar-default .navbar-toggle {
+	border-color:#201209;
+	background-color: #311d14;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background-color: #201209;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color:#FFFFFF;
+}*/
